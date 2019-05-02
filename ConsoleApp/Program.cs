@@ -39,7 +39,10 @@ namespace ConsoleApp
             // CountFactors();
             // MinPerimeterRectangle();
             //Peaks();
-            Flags();
+            //Flags();
+            PrimeNumbers();
+            
+
 
         }
         static void OddOccurancesInArray()
@@ -707,6 +710,23 @@ namespace ConsoleApp
             sol = new Flags();
             result = sol.solution1(A);
             WriteLine("solution A result : {0}", result);
+        }
+
+        static void PrimeNumbers()
+        {
+            bool[] result;
+
+            SieveofEratosthenes sol = new SieveofEratosthenes();
+
+            result = sol.solution(1000);
+
+            for (int i = 0; i < result.Length; i++)
+            {
+                if (result[i])
+                {
+                    WriteLine($"{i}");
+                }
+            }
         }
 
 

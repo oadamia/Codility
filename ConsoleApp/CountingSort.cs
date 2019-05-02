@@ -28,6 +28,7 @@ namespace ConsoleApp
                 max = A[i] > max ? A[i] : max ;
             
             Count = new int[max+1];
+
             for (int i = 0; i < A.Length; i++)
                 Count[A[i]]++;
             
@@ -37,6 +38,8 @@ namespace ConsoleApp
                     A[position] = i;
                     position++;
                 }
+
+            
 
             return A;
         }
